@@ -9,7 +9,7 @@ public class Hach2{
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] hachage = digest.digest(val_entree.getBytes());
 
-            // Convert byte array to hexadecimal string
+            // Conversion du tableau de bytes en chaine Hexadécimal
             StringBuilder HexaChaine = new StringBuilder();
             for (byte b : hachage) {
                 String hex = Integer.toHexString(0xff & b);
